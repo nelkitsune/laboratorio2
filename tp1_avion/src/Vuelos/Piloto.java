@@ -1,5 +1,7 @@
 package Vuelos;
 
+import java.util.List;
+
 public class Piloto extends Persona {
     private String aerolinea;
     private String experiencia;
@@ -29,5 +31,9 @@ public class Piloto extends Persona {
 
     public void setExperiencia(String experiencia) {
         this.experiencia = experiencia;
+    }
+
+    public void mostrar_info(){
+        System.out.println("Nombre: " + getNombre() + "\nApellido: "+getApellido()+"\nEdad: " + getEdad()+"\nAerolinea: " + getAerolinea()+ "\nExperiencia: "+ getExperiencia());
     }
 }

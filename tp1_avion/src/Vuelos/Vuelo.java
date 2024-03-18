@@ -8,6 +8,7 @@ public class Vuelo {
     private int fecha_salida;
     private int fecha_llegada;
     private int numero_vuelo;
+    private String piloto;
     public Vuelo() {
     }
     public Vuelo(String aerolinea, int aeronave, String destino, String origen, int fecha_salida, int fecha_llegada, int numero_vuelo) {

@@ -4,17 +4,20 @@ public class Reserva {
     private String destino;
     private int dni;
     private int fecha_salida;
-    private int fecha_regreso;
+    private int fecha_llegada;
     private String nombre_apellido_pasajero;
     private int numero_asiento;
     private int numero_vuelo;
     private String origen;
 
-    public Reserva(String destino, int dni, int fecha_salida, int fecha_regreso, String nombre_apellido_pasajero, int numero_asiento, int numero_vuelo, String origen) {
+    public Reserva() {
+    }
+
+    public Reserva(String destino, int dni, int fecha_salida, int fecha_llegada, String nombre_apellido_pasajero, int numero_asiento, int numero_vuelo, String origen) {
         this.destino = destino;
         this.dni = dni;
         this.fecha_salida = fecha_salida;
-        this.fecha_regreso = fecha_regreso;
+        this.fecha_llegada = fecha_llegada;
         this.nombre_apellido_pasajero = nombre_apellido_pasajero;
         this.numero_asiento = numero_asiento;
         this.numero_vuelo = numero_vuelo;
@@ -45,12 +48,12 @@ public class Reserva {
         this.fecha_salida = fecha_salida;
     }
 
-    public int getFecha_regreso() {
-        return fecha_regreso;
+    public int getFecha_llegada() {
+        return fecha_llegada;
     }
 
-    public void setFecha_regreso(int fecha_regreso) {
-        this.fecha_regreso = fecha_regreso;
+    public void setFecha_llegada(int fecha_llegada) {
+        this.fecha_llegada = fecha_llegada;
     }
 
     public String getNombre_apellido_pasajero() {
@@ -84,4 +87,17 @@ public class Reserva {
     public void setOrigen(String origen) {
         this.origen = origen;
     }
+
+    public void mostrarInformacion() {
+        System.out.println("Información de la reserva:");
+        System.out.println("Destino: " + destino);
+        System.out.println("DNI del pasajero: " + dni);
+        System.out.println("Fecha de salida: " + fecha_salida);
+        System.out.println("Fecha de llegada: " + fecha_llegada);
+        System.out.println("Nombre y apellido del pasajero: " + nombre_apellido_pasajero);
+        System.out.println("Número de asiento: " + numero_asiento);
+        System.out.println("Número de vuelo: " + numero_vuelo);
+        System.out.println("Origen: " + origen);
+    }
+
 }

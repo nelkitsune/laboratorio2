@@ -1,16 +1,16 @@
 package Vuelos;
 
-public class avion {
+public class Avion {
     private String aerolinea;
     private int capacidad_carga;
     private int capacidad_pasajeros;
     private String modelo;
     private int numero_serie;
 
-    public avion() {
+    public Avion() {
     }
 
-    public avion(String aerolinea, int capacidad_carga, int capacidad_pasajeros, String modelo, int numero_serie) {
+    public Avion(String aerolinea, int capacidad_carga, int capacidad_pasajeros, String modelo, int numero_serie) {
         this.aerolinea = aerolinea;
         this.capacidad_carga = capacidad_carga;
         this.capacidad_pasajeros = capacidad_pasajeros;
@@ -56,5 +56,9 @@ public class avion {
 
     public void setNumero_serie(int numero_serie) {
         this.numero_serie = numero_serie;
+    }
+
+    public void mostrar_info(){
+        System.out.println("Aerolinea: " + getAerolinea()+"\nCapacidad de carga: "+getCapacidad_carga()+"\nCapacidad de pasajeros: "+ getCapacidad_pasajeros() + "\nModelo: "+getModelo()+"\nNumero de serie: "+ getNumero_serie());
     }
 }
