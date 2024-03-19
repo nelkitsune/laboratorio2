@@ -1,17 +1,16 @@
-package Vuelos;
+package Vuelo_carpeta;
 
 public abstract class Persona {
     protected String nombre;
     protected String apellido;
     protected int edad;
+    protected int dni;
 
-    public Persona() {
-    }
-
-    public Persona(String nombre, String apellido, int edad) {
+    public Persona(String nombre, String apellido, int edad, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        this.dni = dni;
     }
 
     public String getNombre() {
@@ -36,5 +35,13 @@ public abstract class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 }
