@@ -65,19 +65,5 @@ public class Vuelo {
     public void setNumero_vuelo(int numero_vuelo) {
         this.numero_vuelo = numero_vuelo;
     }
-    public void mostrar_info() {
-        System.out.println("Número de vuelo: " + numero_vuelo);
-        System.out.println();
-        System.out.println("Origen: " + origen);
-        System.out.println();
-        System.out.println("Destino: " + destino);
-        System.out.println();
-        System.out.println("Fecha de salida: " + fecha_salida);
-        System.out.println();
-        System.out.println("Fecha de llegada: " + fecha_llegada);
-        System.out.println();
-        System.out.println("Información del avión:");
-        avion.mostrar_info();
-        System.out.println("--------");
-    }
+
 }

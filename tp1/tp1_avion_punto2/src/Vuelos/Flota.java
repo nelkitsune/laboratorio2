@@ -46,16 +46,4 @@ public class Flota {
         lista_aviones.add(avion);
     }
 
-    public void mostrar_info() {
-        System.out.println("Información de la flota de la aerolínea " + getAerolinea() + ":");
-        for (Avion avion : lista_aviones) {
-            System.out.println("-----------------------------");
-            System.out.println("Avión:");
-            avion.mostrar_info();
-            System.out.println("-----------------------------");
-        }
-    }
-
-
-
 }

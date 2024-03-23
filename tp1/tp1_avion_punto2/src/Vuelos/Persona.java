@@ -13,6 +13,15 @@ public abstract class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        this.dni = dni;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 
     public String getNombre() {

@@ -22,7 +22,4 @@ public class Piloto extends Persona {
         this.experiencia = experiencia;
     }
 
-    public void mostrar_info(){
-        System.out.println("Nombre: " + getNombre() + "\nApellido: "+getApellido()+"\nEdad: " + getEdad()+"\nAerolinea: " +  "\nExperiencia: "+ getExperiencia());
-    }
 }

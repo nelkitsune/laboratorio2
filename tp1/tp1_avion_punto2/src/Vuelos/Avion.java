@@ -82,22 +82,4 @@ public class Avion {
         this.numero_serie = numero_serie;
     }
 
-
-    public void mostrar_info() {
-        System.out.println();
-        System.out.println("Aerolinea: "+ getFlota().getAerolinea());
-        System.out.println();
-        System.out.println("Modelo: " + modelo);
-        System.out.println();
-        System.out.println("Número de serie: " + numero_serie);
-        System.out.println();
-        System.out.println("Capacidad de pasajeros: " + capacidad_pasajeros);
-        System.out.println();
-        System.out.println("Capacidad de carga: " + capacidad_carga);
-        System.out.println();
-        System.out.println("Piloto: " + piloto.getNombre() + " " + piloto.getApellido());
-        System.out.println();
-        System.out.println("Co-piloto: " + co_piloto.getNombre() + " " + co_piloto.getApellido());
-        System.out.println();
-    }
 }
